@@ -91,4 +91,30 @@ print("Вариант 4")
 print()
 print("Задание 1")
 print()
+nechetSpisok = [random.randrange(1,10) for i in range(10)]
+print(nechetSpisok)
+resNechet = 1
+for i in range(1,len(nechetSpisok),2):
+    resNechet*=nechetSpisok[i]
+print(resNechet)
+print()
+print("Задание 2")
+maxSpisok = [random.randrange(1,100) for i in range(10)]
+print(maxSpisok)
+maxSpisok.remove(max(maxSpisok))
+print(maxSpisok)
+
+print("Вариант 5")
+print()
+print("Задание 1")
+chetElement = [random.randrange(1,100) for i in range(10)]
+minChet = 0
+for i in range(0,len(chetElement),2):
+    if(minChet==0):
+        minChet=chetElement[i]
+    elif(minChet>chetElement[i]):
+        minChet=chetElement[i]
+print(minChet)
+
+zeroElements = [random.randrange(0,10) for i in range(10)]
 
